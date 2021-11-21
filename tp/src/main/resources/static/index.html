@@ -1,0 +1,142 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+    <title>CodePen - Navbar with Wrapper</title>
+
+
+
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+  --wrapper_value: 10%;
+}
+
+* {
+  box-sizing: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #24252A;
+}
+
+li, a, button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #EDF0F1;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 30px var(--wrapper_value);
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+  border-radius: 50px;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088A9;
+}
+
+button {
+  margin: 0 20px;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+.page__content {
+  height: 200vh;
+  padding: 30px var(--wrapper_value);
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: #EDF0F1;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+}
+</style>
+
+    <script>
+  window.console = window.console || function(t) {};
+</script>
+
+
+
+    <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" >
+<header>
+    <img class="logo" src="logo.svg"  height="48px" alt="Site Logo">
+    <a class="cta" href="#"><button>Contact</button></a>
+    <nav>
+        <ul class="nav__links">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="page__content">
+    <h1>Hello</h1>
+    <p>My name is Jordan Welsman and I'm a Data Science & Analytics student.</p>
+</div>
+
+
+
+
+
+</body>
+
+</html>
+ 
